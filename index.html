@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Slideshow</title>
+    <link rel="stylesheet" href="style.css"></style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--Images container-->
+    <div class="slideshow-container">
+
+        <div class="img-slides fades">
+            <div class="numb-text">1 / 6</div>
+            <img src="images/img-5.jpg" alt="img-1">
+            <div class="text">Learn Coding!!!</div>
+        </div>
+
+        <div class="img-slides fades">
+            <div class="numb-text">2 / 6</div>
+            <img src="images/img-7.jpg" alt="img-2">
+            <div class="text">Get yourself a Teacher</div>
+        </div>
+
+        <div class="img-slides fades">
+            <div class="numb-text">3 / 6</div>
+            <img src="images/img-9.jpg" alt="img-3">
+            <div class="text">Start Coding</div>
+        </div>
+
+        <div class="img-slides fades">
+            <div class="numb-text">4 / 6</div>
+            <img src="images/img-10.jpg" alt="img-4">
+            <div class="text">Seek for Assitance</div>
+        </div>
+
+        <div class="img-slides fades">
+            <div class="numb-text">5 / 6</div>
+            <img src="images/img-12.jpg" alt="img-5">
+            <div class="text">Try some Exicting Projects</div>
+        </div>
+
+        <div class="img-slides fades">
+            <div class="numb-text">6 / 6</div>
+            <img src="images/img-13.jpg" alt="img-6">
+            <div class="text">Take a break and Enjoy!</div>
+        </div>
+
+        <a class="prev" onclick="pushSlides(-1)">&#10094;</a>
+        <a class="next" onclick="pushSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!--For the circles-->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+  </body>
+</html>
